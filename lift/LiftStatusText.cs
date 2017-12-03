@@ -364,11 +364,10 @@ namespace IngameScript
             foreach(var row in data)
             {
                 StringBuilder sb = new StringBuilder(this.screen.ElementAt<string>(x + i));
-                StringBuilder sbc = new StringBuilder(row);
                 var j = 0;
                 foreach(var col in row)
                 {
-                    sb[j + y] = sbc[j];
+                    sb[j + y] = col;
                     j++;
                 }
                 i++;
